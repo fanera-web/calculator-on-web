@@ -1,0 +1,59 @@
+:root {
+    --bg-main: #F8FAFC;
+    --bg-card: #FFFFFF;
+    --bg-header: #F1F5F9;
+
+    --text-main: #0F172A;
+    --text-muted: #64748B;
+    --text-in-case: white;
+
+    --accent: #38BDF8;
+    --accent-hover: #0EA5E9;
+
+    --danger: #EF4444;
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
+
+    --shadow-sm: 0 2px 6px rgba(0,0,0,0.06);
+    --shadow-md: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--bg-main);
+    color: var(--text-main);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    transition: 0.5s ease;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.dark {
+    background: #1b2949;
+}
+
+.dark header {
+    background: #141e37;
+}
+
+.dark .task,
+.dark select,
+.dark button {
+    background: #0b101e;
+    color: white;
+}
+
+@media (max-width: 500px) {
+    li, p { max-width: 80%; }
+}
+
+@media (min-width: 501px) {
+    li, p { max-width: 90%; }
+}
